@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Drunken-Genius/static/css/main.970f0bcb.css",
-    "main.js": "/Drunken-Genius/static/js/main.fba18a50.js",
+    "main.css": "/Drunken-Genius/static/css/main.1dd74e6a.css",
+    "main.js": "/Drunken-Genius/static/js/main.2ed5c356.js",
     "static/js/787.edff9857.chunk.js": "/Drunken-Genius/static/js/787.edff9857.chunk.js",
     "static/media/DrunkHandwriting.ttf": "/Drunken-Genius/static/media/DrunkHandwriting.8107b4fdb8b94e7a3fb6.ttf",
     "static/media/drunken-genius-logo.png": "/Drunken-Genius/static/media/drunken-genius-logo.8c0f4a5020de2805e6e8.png",
@@ -13,12 +13,12 @@
     "static/media/4drinks.png": "/Drunken-Genius/static/media/4drinks.6a2bb7ad9ce7c8a4c4d8.png",
     "static/media/3drinks.png": "/Drunken-Genius/static/media/3drinks.e8e5aa15acf2ec92e377.png",
     "index.html": "/Drunken-Genius/index.html",
-    "main.970f0bcb.css.map": "/Drunken-Genius/static/css/main.970f0bcb.css.map",
-    "main.fba18a50.js.map": "/Drunken-Genius/static/js/main.fba18a50.js.map",
+    "main.1dd74e6a.css.map": "/Drunken-Genius/static/css/main.1dd74e6a.css.map",
+    "main.2ed5c356.js.map": "/Drunken-Genius/static/js/main.2ed5c356.js.map",
     "787.edff9857.chunk.js.map": "/Drunken-Genius/static/js/787.edff9857.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.970f0bcb.css",
-    "static/js/main.fba18a50.js"
+    "static/css/main.1dd74e6a.css",
+    "static/js/main.2ed5c356.js"
   ]
 }
