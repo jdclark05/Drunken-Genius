@@ -1,38 +1,1051 @@
+:root {
+  --jeopardyBlue: #000;
+  --bg: linear-gradient(90deg, #636363 0%, #1b1b1b 100%);
+}
+
+@font-face {
+  font-family: 'DrunkHandwriting';
+  src: local('DrunkHandwriting'), url(./public/fonts/DrunkHandwriting.ttf) format('truetype');
+}
+
+/*-----------------------------------------------------------------------*/
+/**--App ----------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
 .App {
+  /* margin-top: -25px; */
   text-align: center;
+  background-image: linear-gradient(180deg, #202029 0%, #0C0C2C 100%);
+  height: 100vh;
+  width: 100vw;
+  min-width: 1850px;
+  padding: 2%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.gameTitle1 {
+  font-family: 'DrunkHandwriting';
+  color: white;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: start;
+  margin-Top: -120px;
+  margin-left: -375px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.gameTitle2 {
+  font-family: 'DrunkHandwriting';
+  color: white;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: start;
+  margin-Top: -110px;
+  margin-left: -300px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.gameTitle3 {
+  font-family: 'DrunkHandwriting';
+  color: white;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: start;
+  margin-Top: -134px;
+  margin-left: -327px;
+}
+
+.gameTitle4 {
+  font-family: 'DrunkHandwriting';
+  color: white;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: start;
+  margin-Top: -104px;
+  margin-left: -55px;
+}
+
+.gameTitle5 {
+  font-family: 'DrunkHandwriting';
+  color: white;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: start;
+  margin-Top: -105px;
+  margin-left: -55px;
+}
+
+
+.mainContainer {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.playArea{
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 50px;
+}
+
+.leaderBoard{
+  border: 2px solid #fff;
+  width: 25%;
+  min-width: 400px;
+  height: 848px;
+  font-family: 'DrunkHandwriting';
+  background-color: black;
+  color: #fff;
+  margin-right: 100px;
+  margin-bottom: 70px;
+}
+
+.leaderboardHeader {
+  color: green;
+  border-bottom: 2px solid #fff;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  height: 50px;
+  padding-bottom: 10px;
+  padding-top: 13px;
+}
+
+.scoreBoardPlayers {
+  border-bottom: 1px solid #fff;
+  display: flex;
+  justify-content: space-evenly;
+  height: 122px;
+  flex-direction: row;
+  flex-wrap: normal;
+  align-items: center;
+}
+
+.playerScoreData{
+  flex: 1;
+  font-size: .9rem;
+}
+
+.scoreDisplay {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.scoreText{
+  flex: 1;
+  font-size: .8rem;
+  width: 100px;
+}
+
+#plusScore{
+  flex: .05;
+  height: 25px;
+  width: 25px;
+  border-radius: 15px;
+  font-size: 1.3rem;
+  background-color: green;
+  border: none;
+  font-weight: bold;
+}
+
+#plusScore:hover{
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+#minusScore{
+  flex: .1;
+  margin-right: 20px;
+  height: 25px;
+  width: 25px;
+  border-radius: 15px;
+  font-size: 1.3rem;
+  padding-bottom: 25px;
+  background-color: red;
+  border: none;
+  font-weight: bold;
+}
+
+#minusScore:hover{
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+.linkText {
+  text-decoration: none;
+}
+
+
+/*-------------------------------------------------------------------------*/
+/**--Intro Page------------------------------------------------------------*/
+/*-------------------------------------------------------------------------*/
+.rulesMain2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  backdrop-filter: blur(20px);
+	background-size: 400% 400%;
+}
+
+.IntroContainer {
+  width: 100%;
+  margin-top: -100px;
+}
+
+.welcomeText {
+  font-family: 'DrunkHandwriting';
+  color: #fff;
+  font-size: 3rem;
+  justify-self: start;
+}
+
+.welcomeText2 {
+  font-family: 'DrunkHandwriting';
+  color: #ffffff;
+  margin-top: -30px;
+  font-size: 1rem;
+  font-style: italic;
+  justify-self: end;
+}
+
+.buttonHolder4 {
+  margin-top: 670px;
+  margin-left: -70px;
+}
+
+#nextButton4 {
+  height: 75px;
+  width: 250px;
+  font-size: 2.5rem;
+  border: none;
+  border-radius: 10px;
+  color: red;
+  background-color: red;
+}
+
+#linkText4{
+  color: #fff;
+}
+
+/*-------------------------------------------------------------------------*/
+/**--Rules-----------------------------------------------------------------*/
+/*-------------------------------------------------------------------------*/
+.rulesMain{
+  border: 2px solid #fff;
+  display: flex;
+  width: 1200px;
+  height: 760px;
+  flex-direction: column;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, .15);
+	background-size: 400% 400%;
+  opacity: 1;
+  margin-top: 90px;
+  margin-left: -50px;
+}
+
+.rulesHeader{
+color: #fff;
+font-family: 'DrunkHandwriting';
+font-size: .65rem;
+}
+
+.rulesTitle{
+  border-bottom: 1px solid #fff;
+  width: 160px;
+  line-height: 4rem;
+}
+
+.rulesContainer{
+  width: 90%;
+  height: 82%;
+}
+
+.rulesContainer > p {
+  color: #fff;
+  font-size: 2rem;
+  letter-spacing: .2rem;
+}
+
+.buttonHolder{
+  height: 60px;
+  width: 200px;
+  margin-bottom: 25px;
+}
+
+#likeText{
+  color: #fff;
+  text-decoration: none;
+}
+
+#linkText:navigated{
+  color: #fff;
+}
+
+.buttonHolder{
+  width: 450px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+ul {
+  list-style: none;
+}
+
+#listInfo {
+  font-size: 1.5rem;
+}
+
+.drinkList{
+  margin-top: 0px;font-weight: normal;
+  color: #fff;
+  font-size: 2rem;
+}
+/*-------------------------------------------------------------------------*/
+/**--Contestant Inputs-----------------------------------------------------*/
+/*-------------------------------------------------------------------------*/
+.contestantEntries{
+  border: 2px solid #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 1200px;
+  height: 760px;
+  margin-left: -45px;
+  flex-direction: column;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  background: linear-gradient(90deg, rgba(255, 255, 255, .25), rgba(255, 255, 255, .25), rgba(0, 0, 0, .25), rgba(255, 255, 255, .25));
+	background-size: 400% 400%;
+  opacity: 1;
+}
+
+.cContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 40px;
+  width: 100%;
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.playerInputLabel1 {
+  font-family: 'DrunkHandwriting';
+  color: black;
+}
+
+.playerInputLabel2 {
+  font-family: 'DrunkHandwriting';
+  color: red;
+}
+
+.nameInput {
+  margin: -10px 0 0 20px!important;
+  width: 300px;
+  /* margin-left: 20px; */
+  height: 50px;
+  font-family: 'DrunkHandwriting';
+  color: black;
+  font-size: 1.5rem;
+}
+
+.buttonHolder2{
+  margin-top: 75px;
+  width: 450px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  margin-left: 155px;
+  margin-top: 150px;
+}
+
+#nextButton{
+  height: 65px;
+  width: 170px;
+  font-size: 2rem;
+  border: none;
+  border-radius: 10px;
+  color: #000;
+  background-color: red;
+}
+
+#nextButton2 {
+  height: 65px;
+  width: 170px;
+  font-size: 2rem;
+  padding-top: 5px;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #000;
+}
+
+#nextButton3 {
+  margin-top: 25px;
+  margin-left: -45px;
+  height: 65px;
+  width: 350px;
+  font-size: 2rem;
+  border: none;
+  border-radius: 10px;
+  color: #000;
+  background-color: rgb(22, 192, 0);
+  text-decoration: underline;
+}
+
+#linkText{
+  color: #000;
+  background-color: red;
+}
+
+#linkText2{
+  color: #fff;
+  background-color: #000;
+}
+
+#submitText{
+  margin-top: 8px;
+  color: #fff;
+  font-weight: normal;
+  text-decoration: none;
+  background-color: #000;
+}
+
+.refreshWarning {
+  color: rgb(255, 116, 116);
+  margin-top: 20px;
+}
+
+/*-------------------------------------------------------------------------*/
+/**--Game1-----------------------------------------------------------------*/
+/*-------------------------------------------------------------------------*/
+
+.answered{
+  border: 2px solid #fff;
+  height: 90px;
+  width: 99%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+  border-radius: 10px;
+  background-color: var(--jeopardyBlue);
+  background-image: url(./public/images/checkmark.png)
+}
+
+
+.gameBoardMain{
+  height: 750px;
+  width: 1250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.gameBoardMain2{
+  height: 750px;
+  width: 1250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 90px;
+}
+
+.gameBoardMain3{
+  height: 750px;
+  width: 1250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.drinkTable{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: -95px;
+  margin-right: 10px;
+}
+
+.drinkMultiplier{
+  color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'DrunkHandwriting';
+  font-size: 1rem;
+  height: 100px;
+}
+
+.categoryColumn{
+  flex: 1;
+  margin-left: 4px;
+  margin-right: 4px;
+  padding: .4%;
+}
+
+.categoryTitle{
+  border: 2px solid #fff;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+  border-radius: 10px;
+  background-color: var(--jeopardyBlue);
+}
+
+.categoryTitleText{
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+.categoryQuestions{
+  border-top: 2px solid #fff;
+  margin-top: 20px;
+  margin-left: 4px;
+  margin-right: 4px;
+  height: 84%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.Q1{
+  border: 2px solid #fff;
+  height: 90px;
+  width: 99%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+  border-radius: 10px;
+  background-color: var(--jeopardyBlue);
+}
+
+.Q1:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+  background-color: red;
+}
+
+.customAlert{
+  background-image: linear-gradient(180deg, #2E2E3A 0%, #0C0C2C 100%);
+}
+
+.custom-ui{
+  background-image: linear-gradient(180deg, #2E2E3A 0%, #0C0C2C 100%);
+  height: 800px;
+  width: 1000px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 5%;
+}
+
+.questionPopup{
+  text-align: center;
+  color: #fff;
+  font-size: 4rem;
+}
+
+.answerLabel{
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.answerText{
+  text-align: center;
+  color: green;
+  font-size: 6rem;
+  margin-top: -40px;
+}
+
+#showAnswerButton{
+  width: 200px;
+  height: 45px;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  font-size: 1.5rem;
+  background-color: #000;
+  color: #fff;
+}
+
+#answerHeader {
+  flex: 1;
+  font-size: 4rem;
+}
+
+#answerBody{
+  width: 900px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  flex: 1
+}
+
+.playerButtonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#answerFooter{
+  flex: 1;
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+#answerReveal{
+  color: #fff;
+  font-size: 3rem;
+}
+
+#whoGotItContainer{
+  color: #fff;
+  font-size: 3rem;
+  margin-bottom: 10px;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+}
+
+.rightAnswerButton {
+  background-color: darkgreen;
+  color: black;
+  font-size: 2rem;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 30px;
+  margin: 10px 20px;
+}
+
+.rightAnswerButton:hover {
+  background-color: green;
+  transform: scale(1.25);
+}
+
+.wrongAnswerButton {
+  background-color: darkred;
+  color: black;
+  font-size: 2rem;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 30px;
+  margin: 10px 20px;
+}
+
+.wrongAnswerButton:hover {
+  background-color: red;
+  transform: scale(1.25);
+}
+
+.disabledButton {
+  color: black;
+  font-size: 2rem;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 30px;
+  margin: 10px 20px;
+}
+
+.disabledButton:hover {
+  transform: scale(1.25);
+}
+
+.escapeText{
+  font-size: 2rem;
+  color: red;
+}
+
+.bottomDisplay{
+  display: flex;
+  flex-direction: row;
+  margin-left: 450px;
+}
+
+#game2Button{
+  height: 65px;
+  width: 350px;
+  background-color: green;
+  border-radius: 25px;
+  border: none;
+  margin-top: 15px;
+  font-size: 1.7rem;
+}
+
+#warningLabel{
+  margin-top: 55px;
+  margin-left: 25px;
+  color: red;
+  text-decoration: italic;
+  font-weight: normal;
+}
+
+#game2Path{
+  color: #000;
+}
+
+/*--------------------------------------------------------------------*/
+/**-Final Round Page-------------------------------------------------**/
+/*--------------------------------------------------------------------*/
+.FinalMain{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1100px;
+  height: 700px;
+  border-radius: 35px;
+}
+
+.FinalCategory{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1100px;
+  height: 650px;
+  margin-top: 50px;
+  border-radius: 35px;
+  border: 2px solid #fff;
+  background-color: #000;
+}
+
+.FinalCategoryText{
+  color: #fff;
+  font-size: 6rem;
+}
+
+#newGameButton{
+  height: 65px;
+  width: 350px;
+  background-color: green;
+  border-radius: 25px;
+  border: none;
+  margin-top: 15px;
+  font-size: 1.7rem;
+}
+
+#invisibleButton{
+  height: 65px;
+  width: 350px;
+  opacity: 0.0;
+  border-radius: 25px;
+  border: none;
+  margin-top: 15px;
+}
+
+.wagerModal {
+  border: 2px solid #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 1200px;
+  height: 760px;
+  margin-left: -45px;
+  flex-direction: column;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  background: linear-gradient(90deg, rgba(255, 255, 255, .25), rgba(255, 255, 255, .25), rgba(0, 0, 0, .25), rgba(255, 255, 255, .25));
+	background-size: 400% 400%;
+  opacity: 1;
+}
+
+#wagerForm {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.wagerFormTitle {
+  flex: 1;
+  color: red;
+  font-family: 'DrunkHandwriting';
+}
+
+.wagerFormInnerContainer{
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 100%;
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.wagerInputLabel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  font-family: 'DrunkHandwriting';
+  color: black;
+}
+
+.wagerModalButtonHolder {
+  margin-top: 75px;
+  width: 450px;
+  display: flex;
+  justify-content: center;
+}
+
+/*--------------------------------------------------------------------*/
+/**--- Results Page --------------------------------------------------*/
+/*--------------------------------------------------------------------*/
+
+.mainResultsContainer{
+  height: 750px;
+  width: 1250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.resultsMain{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1100px;
+  height: 650px;
+  margin-top: 50px;
+  border-radius: 35px;
+  border: 2px solid #fff;
+  background-color: #000;
+}
+
+.playerPlacingContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.winnersCircleText1 {
+  margin: 30px 10px;
+  font-size: 3.5rem;
+  font-family: 'DrunkHandwriting';
+  margin-left: -20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.winnersCircleText1a {
+  margin: 30px 10px;
+  font-size: 4.4rem;
+  font-family: 'DrunkHandwriting';
+  transform: rotate(-25deg);
+  margin-top: 1px;
+  margin-left: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.winnersCircleText2 {
+  margin: 30px 10px;
+  font-size: 2.5rem;
+  margin-right: 10px;
+  margin-left: 10px;
+  font-family: 'DrunkHandwriting';
+}
+
+.winnersCircleText2a {
+  margin: 30px 10px;
+  font-size: 3rem;
+  font-family: 'DrunkHandwriting';
+  transform: rotate(-25deg);
+  margin-top: 10px;
+}
+
+.winnersCircleText3 {
+  margin: 30px 10px;
+  font-size: 1.5rem;
+  font-family: 'DrunkHandwriting';
+}
+
+.winnersCircleText3a {
+  margin: 30px 10px;
+  font-size: 2.2rem;
+  font-family: 'DrunkHandwriting';
+  transform: rotate(-25deg);
+  margin-top: 15px;
+}
+
+
+
+/*--------------------------------------------------------------------*/
+/**--Select Category--------------------------------------------------*/
+/*--------------------------------------------------------------------*/
+
+.selectCategoriesMain{
+  border: 2px solid #fff;
+  width: 1350px;
+  height: 770px;
+  margin-left: -50px;
+  margin-top: 90px;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, .15);
+	background-size: 400% 400%;
+  opacity: 1;
+}
+
+.selectCatPageHeader {
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.CatPageHeader{
+  color: #fff;
+  font-family: 'DrunkHandwriting';
+  font-size: 1.7rem;
+}
+
+.contentHolder{
+  width: 100%;
+  height: 500px;
+}
+
+.categoryTitles {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  justify-content: center;
+}
+
+.categoriesHolder {
+  margin-top: 50px;
+  flex: 4;
+}
+
+.selectionLabel {
+  margin: 10px 0 10px 0;
+  color: red;
+}
+
+.questionLabels {
   color: white;
+  margin: 7px 25px;
+  font-size: 1.9rem;
 }
 
-.App-link {
-  color: #61dafb;
+.selectedQuestionLabels {
+  margin: 7px 25px;
+  color: green;
+  font-size: 1.9rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.questionLabels:hover {
+
+}
+
+.finalQuestionLabel {
+  color: white;
+  margin: 0 25px;
+  font-size: 1.9rem;
+  margin-bottom: 10px;
+}
+
+.selectedFinalQuestionLabel {
+  color: green;
+  margin: 0 25px;
+  font-size: 1.9rem;
+  margin-bottom: 10px;
+}
+
+.categorySubmit {
+  margin-top: 110px;
+}
+
+.listUL {
+  flex-wrap: wrap;
+  height: 150px;
+  color: #fff;
+  font-size: 1.2rem;
+  margin-right: 15px;
+  margin-left: -10px;
+}
+
+.liHeader{
+  text-decoration: underline;
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+  margin-top: -10px;
+  color: green;
+}
+
+.inputArray {
+  margin: auto;
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.individualInput{
+  height: 40px;
+  display: flex;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+#catSubmitButton{
+  height: 65px;
+  width: 175px;
+  border-radius: 12px;
+  background-color: green;
+  border: none;
+  font-size: 2rem;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-bottom: 50px;
+}
+
+
+/*--------------------------------------------------------------------*/
+/**--Timer------------------------------------------------------------*/
+/*--------------------------------------------------------------------*/
+.actualTimer{
+  color: red;
+  font-size: 2rem;
 }
