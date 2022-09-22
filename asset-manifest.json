@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/Drunken-Genius/static/css/main.0806a2cf.css",
-    "main.js": "/Drunken-Genius/static/js/main.d077bffb.js",
-    "static/js/787.edff9857.chunk.js": "/Drunken-Genius/static/js/787.edff9857.chunk.js",
-    "static/media/DrunkHandwriting.ttf": "/Drunken-Genius/static/media/DrunkHandwriting.8107b4fdb8b94e7a3fb6.ttf",
-    "static/media/drunken-genius-logo.png": "/Drunken-Genius/static/media/drunken-genius-logo.8c0f4a5020de2805e6e8.png",
-    "static/media/6drinks.png": "/Drunken-Genius/static/media/6drinks.6c6b8117257bcf54fee2.png",
-    "static/media/4drinksb.png": "/Drunken-Genius/static/media/4drinksb.0edd5baa90cf9f8356f1.png",
-    "static/media/8drinks.png": "/Drunken-Genius/static/media/8drinks.870687f443ac02364c19.png",
-    "static/media/2shots.png": "/Drunken-Genius/static/media/2shots.83db03f810dbce9b1f77.png",
-    "static/media/2drinks.png": "/Drunken-Genius/static/media/2drinks.e151abcf11533f9bc326.png",
-    "static/media/4drinks.png": "/Drunken-Genius/static/media/4drinks.6a2bb7ad9ce7c8a4c4d8.png",
-    "static/media/3drinks.png": "/Drunken-Genius/static/media/3drinks.e8e5aa15acf2ec92e377.png",
-    "index.html": "/Drunken-Genius/index.html",
-    "main.0806a2cf.css.map": "/Drunken-Genius/static/css/main.0806a2cf.css.map",
-    "main.d077bffb.js.map": "/Drunken-Genius/static/js/main.d077bffb.js.map",
-    "787.edff9857.chunk.js.map": "/Drunken-Genius/static/js/787.edff9857.chunk.js.map"
+    "main.css": "/static/css/main.b12b22c5.css",
+    "main.js": "/static/js/main.2cdd8c42.js",
+    "static/js/787.edff9857.chunk.js": "/static/js/787.edff9857.chunk.js",
+    "static/media/DrunkHandwriting.ttf": "/static/media/DrunkHandwriting.8107b4fdb8b94e7a3fb6.ttf",
+    "static/media/drunken-genius-logo.png": "/static/media/drunken-genius-logo.8c0f4a5020de2805e6e8.png",
+    "static/media/6drinks.png": "/static/media/6drinks.6c6b8117257bcf54fee2.png",
+    "static/media/4drinksb.png": "/static/media/4drinksb.0edd5baa90cf9f8356f1.png",
+    "static/media/8drinks.png": "/static/media/8drinks.870687f443ac02364c19.png",
+    "static/media/2shots.png": "/static/media/2shots.83db03f810dbce9b1f77.png",
+    "static/media/2drinks.png": "/static/media/2drinks.e151abcf11533f9bc326.png",
+    "static/media/4drinks.png": "/static/media/4drinks.6a2bb7ad9ce7c8a4c4d8.png",
+    "static/media/3drinks.png": "/static/media/3drinks.e8e5aa15acf2ec92e377.png",
+    "index.html": "/index.html",
+    "main.b12b22c5.css.map": "/static/css/main.b12b22c5.css.map",
+    "main.2cdd8c42.js.map": "/static/js/main.2cdd8c42.js.map",
+    "787.edff9857.chunk.js.map": "/static/js/787.edff9857.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0806a2cf.css",
-    "static/js/main.d077bffb.js"
+    "static/css/main.b12b22c5.css",
+    "static/js/main.2cdd8c42.js"
   ]
 }
